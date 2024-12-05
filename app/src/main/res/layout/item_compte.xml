@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/neon_blue"
+    app:cardBackgroundColor="@color/dark_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ivAccountIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_account"
+            android:layout_centerVertical="true"
+            app:tint="@color/neon_pink"/>
+
+        <TextView
+            android:id="@+id/tvCompteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivAccountIcon"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/neon_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvSolde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCompteId"
+            android:layout_toEndOf="@id/ivAccountIcon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/neon_green"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:background="@drawable/chip_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDateCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSolde"
+            android:layout_toEndOf="@id/ivAccountIcon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

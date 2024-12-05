@@ -1,0 +1,5 @@
+<!-- drawable/chip_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/neon_pink" />
+    <corners android:radius="16dp" />
+</shape>
